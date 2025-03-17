@@ -116,6 +116,10 @@ app.get('/api/jobs', (req, res) => {
   res.json(mockJobs);
 });
 
+app.get('/',(req,res)=>{
+  res.send("Backend running successfully!");
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
