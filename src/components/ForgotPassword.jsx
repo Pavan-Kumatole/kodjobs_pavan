@@ -15,7 +15,7 @@ const ForgotPassword = () => {
     }
 
     try {
-      const response = await axios.post('/api/forgot-password', { email });
+      const response = await axios.post('https://kodjobs-pavan.onrender.com/api/forgot-password', { email });
       
       if (response.data.success) {
         setMessage('Password has been sent to your email');

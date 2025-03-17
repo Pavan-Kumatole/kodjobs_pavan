@@ -19,7 +19,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post('/api/login', credentials);
+      const response = await axios.post('https://kodjobs-pavan.onrender.com/api/login', credentials);
       if (response.data.success) {
         localStorage.setItem('userId', response.data.userId);
         navigate('/dashboard');

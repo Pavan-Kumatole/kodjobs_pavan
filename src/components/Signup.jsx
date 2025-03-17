@@ -32,7 +32,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post('/api/signup', {
+      const response = await axios.post('https://kodjobs-pavan.onrender.com/api/signup', {
         ...formData,
         age: calculateAge(formData.dob)
       });

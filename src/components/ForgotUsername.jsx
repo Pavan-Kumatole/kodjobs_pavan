@@ -15,7 +15,7 @@ const ForgotUsername = () => {
     }
 
     try {
-      const response = await axios.post('/api/forgot-username', { email });
+      const response = await axios.post('https://kodjobs-pavan.onrender.com/api/forgot-username', { email });
       
       if (response.data.success) {
         setMessage('Username has been sent to your email');
